@@ -1,0 +1,7 @@
+客户端请求token ：http://localhost:8081/oauth/token?grant_type=client_credentials&scope=all&client_id=apply&client_secret=123456
+
+用户请求token：http://localhost:8081/oauth/token?grant_type=password&username=user_1&password=123456&scope=all&client_id=apply&client_secret=123456
+
+刷新token：http://localhost:8081/oauth/token?grant_type=refresh_token&refresh_token=ac737312-e209-4cee-8e80-de74486963ea&scope=all&client_id=apply&client_secret=123456
+
+(数据库存储token 刷新token存在bug，需要重写JDBCtoken)
